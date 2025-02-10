@@ -1,11 +1,11 @@
 %h2 Sign in
 = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
   .field
-    = f.label :Email
+    = f.label :email, "Email"
     %br/
     = f.email_field :email, autofocus: true
   .field
-    = f.label :Password
+    = f.label :password, "Password"
     %br/
     = f.password_field :password
   .actions
