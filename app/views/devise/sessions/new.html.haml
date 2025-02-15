@@ -1,0 +1,14 @@
+.container
+  %h2.header_pageTitle Sign in
+  .signin-form
+    = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+      .field
+        = f.label :email, "Email"
+        %br/
+        = f.email_field :email, autofocus: true
+      .field
+        = f.label :password, "Password"
+        %br/
+        = f.password_field :password
+      .actions
+        = f.submit "Submit", class: "signin-btn"
