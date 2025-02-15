@@ -1,22 +1,26 @@
 !!!
 %html
   %head
-    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{ "http-equiv" => "Content-Type", content: "text/html; charset=UTF-8" }
+    %meta{ name: "viewport", content: "width=device-width, initial-scale=1" }
     %title TodoApp
     = csrf_meta_tags
     = csp_meta_tag
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
   %body
-    %header Boards
-    - if user_signed_in?
-      %p
-        ログイン中: #{current_user.email}
-        = link_to "ログアウト", destroy_user_session_path, method: :delete
-    - else
-      = link_to "ログイン", new_user_session_path
-      = link_to "新規登録", new_user_registration_path
-    %p.notice= notice
-    %p.alert= alert
+    %header.header 
+      %h2 Boards
+      - if user_signed_in?
+        %p.logout-text
+          ログイン中: #{current_user.email}
+          = link_to "ログアウト", destroy_user_session_path, data: { method: 'delete' }
+      - else
+        .header_buttons
+          = link_to "ログイン", new_user_session_path
+          = link_to "新規登録", new_user_registration_path
+    .message-wrap
+      %p.notice= notice
+      %p.alert= alert
     = yield
 

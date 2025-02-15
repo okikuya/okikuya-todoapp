@@ -1,0 +1,56 @@
+@import 'variables';
+
+.signin-form, .signup-form {
+    width: 100%;
+  
+    .field {
+      margin-top: 33px;
+      margin-bottom: 15px;
+    }
+  
+    label {
+      color: #000;
+      font-family: Avenir;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      margin-bottom: -22px;
+    }
+  
+    input[type="email"], input[type="password"] {
+      width: 100%;
+      height: 40px;
+      padding: 8px;
+      border: none;
+      border-radius: 10px;
+      background: #F4F4F4;
+    }
+  
+    .actions {
+        .signin-btn, .signup-btn {
+          position: absolute;
+          bottom: 32px;
+          background-color: #F8BD1C;
+          width: 89%;
+          height: 40px;
+          border: none;
+          cursor: pointer;
+          color: #FFF;
+          font-family: Avenir;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 800;
+          line-height: normal;
+          border-radius: 4px;
+    
+          &:hover {
+            background-color: #F8BD1B;
+          }
+        }
+    }
+}
+
+.logout-text{
+    font-size: 10px;
+}
