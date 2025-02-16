@@ -1,2 +1,9 @@
 .container
-    %h1 HOME
+    %h2 All Boards
+    %div
+        - @boards.each do |board|
+            %div
+                %div
+                    = board.name
+                %div
+                    = board.description
