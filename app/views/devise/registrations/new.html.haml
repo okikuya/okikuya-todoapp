@@ -14,6 +14,10 @@
         = f.label :password_confirmation, "Password Confirmation"
         %br/
         = f.password_field :password_confirmation
+      .field
+        = f.label :avatar, "Profile Picture"
+        %br/
+        = f.file_field :avatar
       .actions
         = f.submit "Submit", class: "signup-btn"
 
