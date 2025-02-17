@@ -25,6 +25,10 @@
       background: #F4F4F4;
     }
 
+    input[type="text"], .board-description {
+        margin-top: 8px;
+    }
+
     .board-description{
         height: 203px;
     }
