@@ -4,6 +4,9 @@
     %div.board_boxes
       - @tasks.each do |task|
         %div.board_box
+          - if task.eyecatch.attached?
+            .task_eyecatch
+              = image_tag task.eyecatch
           %span.board_name= task.title
           %div
             %p.task_description= task.content

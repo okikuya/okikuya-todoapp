@@ -13,8 +13,9 @@ class TasksController < ApplicationController
       @task = @board.tasks.build(task_params)
       @task.user = current_user
       if @task.save
-        redirect_to board_tasks_path(@board), notice: "Task was successfully created."
+        redirect_to board_tasks_path(@board), notice: "タスクを作成しました"
       else
+        flash.now[:error] = '作成できませんでした'
         render :new
       end
     end
@@ -26,7 +27,7 @@ class TasksController < ApplicationController
     end
   
     def task_params
-      params.require(:task).permit(:title, :content, :deadline)
+      params.require(:task).permit(:title, :content, :deadline, :eyecatch)
     end
   end
   

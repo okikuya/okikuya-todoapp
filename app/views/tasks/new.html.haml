@@ -1,7 +1,7 @@
 .container
   %h2.header_pageTitle New Card
   .new-board-form
-    = form_with(model: @task, url: board_tasks_path(@board), local: true) do |f|
+    = form_with(model: @task, url: board_tasks_path(@board), local: true, html: { multipart: true }) do |f|
       %div.board_field
         = f.label :title, "Name"
         %br/
@@ -14,5 +14,9 @@
         = f.label :deadline, "Deadline"
         %br/
         = f.datetime_field :deadline
+      %div.board_field
+        = f.label :eyecatch, "アイキャッチ"
+        %br/
+        = f.file_field :eyecatch
       .actions
         = f.submit "Submit", class: "submit-btn"
