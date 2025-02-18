@@ -57,3 +57,17 @@
         background: #FFF;
     }
 }
+
+.task{
+    &_description, &_deadline {
+        margin-top: 6px;
+        padding-right: 36px;
+        font-size: 14px;
+        opacity: 0.4;
+        word-break: break-all;
+    }
+
+    &_deadline {
+        margin-bottom: 29px;
+    }
+}

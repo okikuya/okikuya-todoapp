@@ -1,0 +1,15 @@
+.container
+  %h2= "#{@board.name}"
+  %div.board_content
+    %div.board_boxes
+      - @tasks.each do |task|
+        %div.board_box
+          %span.board_name= task.title
+          %div
+            %p.task_description= task.content
+          %div
+            - if task.deadline.present?
+              %p.task_deadline= "Deadline: #{task.deadline.strftime('%Y-%m-%d %H:%M')}"
+  
+  .board_add
+    = link_to "+ Add new card", new_board_task_path(@board), class: "add-task-button"
