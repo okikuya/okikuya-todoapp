@@ -14,3 +14,16 @@
 
   %div.task_description-show
     %p= @task.content
+
+  .comments-section
+    %h3 コメント一覧
+
+    - if @task.comments.any?
+      - @task.comments.each do |comment|
+        .comment
+          %p= "#{comment.user.name}: #{comment.content}"
+    - else
+      %p まだコメントはありません。
+
+    .add-comment
+      = link_to "+ Add new comment", new_board_task_comment_path(@task.board, @task), class: "add-comment-button"

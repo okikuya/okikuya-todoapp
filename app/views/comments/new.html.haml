@@ -1,0 +1,13 @@
+.container
+  %h2 Add New Comment
+
+  = form_with model: [@task, @comment], url: board_task_comments_path(@task.board, @task), local: true do |f|
+    .field
+      = f.label :content, "コメント"
+      = f.text_area :content, placeholder: "コメントを入力..."
+
+    .actions
+      = f.submit "コメントを追加", class: "btn"
+
+  .back-link
+    = link_to "キャンセル", board_task_path(@task.board, @task)
