@@ -1,0 +1,349 @@
+@charset "UTF-8";
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 30px 8px;
+  height: 58px;
+  font-weight: bold;
+  font-family: Sen;
+  font-size: 18px;
+  font-weight: 400;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.header a {
+  color: #000;
+  font-size: 14px;
+}
+.header h2 {
+  font-size: 18px;
+  font-weight: 400;
+}
+.header_pageTitle {
+  color: #000;
+  line-height: normal;
+  font-size: 26px;
+  font-weight: 800;
+}
+
+/* アバターコンテナ */
+.avatar-container {
+  position: relative;
+  display: inline-block;
+}
+
+/* アバター画像 */
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* ドロップダウンメニューの初期状態（非表示） */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 30px; /* アバター画像の下に表示 */
+  right: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 8px;
+  width: 110px;
+  -webkit-box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* アバターにホバーしたときにメニューを表示 */
+.avatar-container:hover .dropdown-menu {
+  display: block;
+}
+
+/* メニュー項目 */
+.dropdown-menu a {
+  display: block;
+  padding: 8px;
+  text-decoration: none;
+  color: black;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f0f0f0;
+}
+
+.signin-form, .signup-form, .new-board-form {
+  width: 100%;
+}
+.signin-form .field, .signin-form .board_field, .signup-form .field, .signup-form .board_field, .new-board-form .field, .new-board-form .board_field {
+  margin-top: 33px;
+  margin-bottom: 15px;
+}
+.signin-form label, .signup-form label, .new-board-form label {
+  color: #000;
+  font-family: Sen;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: -22px;
+}
+.signin-form input[type=email], .signin-form input[type=password], .signin-form input[type=text], .signin-form input[type=datetime], .signin-form .board-description, .signup-form input[type=email], .signup-form input[type=password], .signup-form input[type=text], .signup-form input[type=datetime], .signup-form .board-description, .new-board-form input[type=email], .new-board-form input[type=password], .new-board-form input[type=text], .new-board-form input[type=datetime], .new-board-form .board-description {
+  width: 100%;
+  height: 40px;
+  padding: 8px;
+  border: none;
+  border-radius: 10px;
+  background: #F4F4F4;
+}
+.signin-form input[type=text], .signin-form .board-description, .signup-form input[type=text], .signup-form .board-description, .new-board-form input[type=text], .new-board-form .board-description {
+  margin-top: 8px;
+}
+.signin-form .board-description, .signup-form .board-description, .new-board-form .board-description {
+  height: 203px;
+}
+.signin-form .actions .signin-btn, .signin-form .actions .signup-btn, .signin-form .actions .submit-btn, .signup-form .actions .signin-btn, .signup-form .actions .signup-btn, .signup-form .actions .submit-btn, .new-board-form .actions .signin-btn, .new-board-form .actions .signup-btn, .new-board-form .actions .submit-btn {
+  position: absolute;
+  bottom: 32px;
+  background-color: #F8BD1C;
+  width: 87.4396135266%;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  color: #FFF;
+  font-family: Avenir;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  border-radius: 4px;
+}
+.signin-form .actions .signin-btn:hover, .signin-form .actions .signup-btn:hover, .signin-form .actions .submit-btn:hover, .signup-form .actions .signin-btn:hover, .signup-form .actions .signup-btn:hover, .signup-form .actions .submit-btn:hover, .new-board-form .actions .signin-btn:hover, .new-board-form .actions .signup-btn:hover, .new-board-form .actions .submit-btn:hover {
+  background-color: #F8BD1B;
+}
+
+.logout-text {
+  font-size: 10px;
+}
+
+.menu-container {
+  position: relative;
+  display: inline-block;
+}
+
+.menu-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  text-align: right;
+}
+.menu-button img {
+  width: 24px;
+}
+
+.menu-container:focus-within .menu-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 11px;
+}
+
+.menu-content {
+  padding: 10px 16px 12px 14px;
+  display: none;
+  position: absolute;
+  right: 0;
+  background: white;
+  border-radius: 10px;
+  min-width: 66px;
+  z-index: 100;
+}
+
+.menu-item {
+  display: block;
+  text-decoration: none;
+  color: #000;
+  font-family: Sen;
+  font-size: 12px;
+  font-weight: 400;
+  -webkit-transition: background 0.2s;
+  transition: background 0.2s;
+}
+
+.menu-item:hover {
+  background: #f2f2f2;
+}
+
+.board_container {
+  padding: 32px 22px 34px 30px;
+  width: 100%;
+}
+.board_content {
+  padding-top: 35px;
+}
+.board_boxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 26px;
+}
+.board_box-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.board_box {
+  padding: 32px 16px 20px 17px;
+  border-radius: 10px;
+  background: #F4F4F4;
+  color: #000;
+  font-family: Sen;
+  font-weight: 400;
+}
+.board_name {
+  font-size: 18px;
+}
+.board_description {
+  margin-top: 6px;
+  margin-bottom: 29px;
+  padding-right: 36px;
+  font-size: 14px;
+  opacity: 0.4;
+  word-break: break-all;
+}
+.board_add {
+  margin-top: 26px;
+  padding-top: 68px;
+  padding-bottom: 67px;
+  color: #000;
+  text-align: center;
+  font-size: 18px;
+  font-family: Sen;
+  font-weight: 400;
+  border-radius: 10px;
+  border: 1px dashed rgba(0, 0, 0, 0.2);
+  background: #FFF;
+}
+
+.task-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.task-thumbnail {
+  width: 100%;
+  max-width: 600px;
+  display: block;
+  margin: 20px auto;
+}
+.task-description {
+  margin-top: 20px;
+  font-size: 16px;
+}
+.task-description-show {
+  margin-top: 35px;
+  word-break: break-all;
+}
+.task_description, .task_deadline {
+  margin-top: 6px;
+  font-size: 14px;
+  opacity: 0.4;
+  word-break: break-all;
+}
+.task_deadline {
+  margin-bottom: 29px;
+}
+.task_eyecatch {
+  margin-bottom: 27px;
+  height: 170px;
+  position: relative;
+  overflow: hidden;
+}
+.task_eyecatch img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+.task_eyecatch-show {
+  margin-top: 32px;
+  height: 170px;
+  overflow: hidden;
+}
+.task_eyecatch-show img {
+  height: 170px;
+}
+.task-thumbnail {
+  width: 100%;
+  max-width: 600px;
+  display: block;
+  margin: 20px auto;
+}
+.task-description {
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+html {
+  word-spacing: 1px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  height: 100%;
+  background-color: #fff;
+  font-size: 1em;
+  color: #000;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.container {
+  padding: 34px 26px 32px;
+  width: 100%;
+}
+
+.message-wrap {
+  padding: 0 26px;
+}

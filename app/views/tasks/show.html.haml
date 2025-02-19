@@ -1,0 +1,16 @@
+.container
+  %div.task-header
+    %h2.header_pageTitle= truncate(@task.title, length: 20, omission: '...')
+    .menu-container
+      %button.menu-button{ tabindex: "0" }
+        = image_tag 'actions.svg', class: 'dropbtn'
+      .menu-content
+        = link_to 'Edit', edit_board_task_path(@board, @task), class: "menu-item"
+        = link_to 'Delete', board_task_path(@board, @task), method: :delete, data: { confirm: '本当に削除しますか？' }, class: "menu-item"
+
+  - if @task.eyecatch.attached?
+    %div.task_eyecatch-show
+      = image_tag @task.eyecatch
+
+  %div.task_description-show
+    %p= @task.content

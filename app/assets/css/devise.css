@@ -1,0 +1,51 @@
+.signin-form, .signup-form, .new-board-form {
+  width: 100%;
+}
+.signin-form .field, .signin-form .board_field, .signup-form .field, .signup-form .board_field, .new-board-form .field, .new-board-form .board_field {
+  margin-top: 33px;
+  margin-bottom: 15px;
+}
+.signin-form label, .signup-form label, .new-board-form label {
+  color: #000;
+  font-family: Sen;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: -22px;
+}
+.signin-form input[type=email], .signin-form input[type=password], .signin-form input[type=text], .signin-form input[type=datetime], .signin-form .board-description, .signup-form input[type=email], .signup-form input[type=password], .signup-form input[type=text], .signup-form input[type=datetime], .signup-form .board-description, .new-board-form input[type=email], .new-board-form input[type=password], .new-board-form input[type=text], .new-board-form input[type=datetime], .new-board-form .board-description {
+  width: 100%;
+  height: 40px;
+  padding: 8px;
+  border: none;
+  border-radius: 10px;
+  background: #F4F4F4;
+}
+.signin-form input[type=text], .signin-form .board-description, .signup-form input[type=text], .signup-form .board-description, .new-board-form input[type=text], .new-board-form .board-description {
+  margin-top: 8px;
+}
+.signin-form .board-description, .signup-form .board-description, .new-board-form .board-description {
+  height: 203px;
+}
+.signin-form .actions .signin-btn, .signin-form .actions .signup-btn, .signin-form .actions .submit-btn, .signup-form .actions .signin-btn, .signup-form .actions .signup-btn, .signup-form .actions .submit-btn, .new-board-form .actions .signin-btn, .new-board-form .actions .signup-btn, .new-board-form .actions .submit-btn {
+  position: absolute;
+  bottom: 32px;
+  background-color: #F8BD1C;
+  width: 87.4396135266%;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  color: #FFF;
+  font-family: Avenir;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  border-radius: 4px;
+}
+.signin-form .actions .signin-btn:hover, .signin-form .actions .signup-btn:hover, .signin-form .actions .submit-btn:hover, .signup-form .actions .signin-btn:hover, .signup-form .actions .signup-btn:hover, .signup-form .actions .submit-btn:hover, .new-board-form .actions .signin-btn:hover, .new-board-form .actions .signup-btn:hover, .new-board-form .actions .submit-btn:hover {
+  background-color: #F8BD1B;
+}
+
+.logout-text {
+  font-size: 10px;
+}
