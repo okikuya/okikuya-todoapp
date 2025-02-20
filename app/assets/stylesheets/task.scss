@@ -42,9 +42,10 @@
     &_eyecatch {
         margin-bottom: 27px;
         height: 170px;
-        position: relative;
         overflow: hidden;
-    
+        border-radius: 8px;
+        position: relative;
+        
         img {
           position: absolute;
           top: 50%;
@@ -54,28 +55,23 @@
           transform: translate(-50%, -50%);
           width: 100%;
         }
+    }
 
-        &-show{
-            margin-top: 32px;
-            height: 170px;
-            overflow: hidden;
-            text-align: center;
+    &_eyecatch-show{
+        margin-top: 32px;
+        height: 170px;
+        overflow: hidden;
+        border-radius: 8px;
+        position: relative;
 
-            img{
-                height: 170px;
-            }
+        img{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            width: 100%;
         }
-    }
-
-    &-thumbnail {
-        width: 100%;
-        max-width: 600px;
-        display: block;
-        margin: 20px auto;
-    }
-      
-    &-description {
-        margin-top: 20px;
-        font-size: 16px;
     }
 }

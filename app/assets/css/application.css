@@ -262,8 +262,12 @@
   margin-top: 20px;
   font-size: 16px;
 }
-.task-description-show {
+.task_description-show {
+  border-radius: 10px;
+  background: #F4F4F4;
   margin-top: 35px;
+  padding: 20px 16px 26px 15px;
+  font-size: 14px;
   word-break: break-all;
 }
 .task_description, .task_deadline {
@@ -293,19 +297,67 @@
   margin-top: 32px;
   height: 170px;
   overflow: hidden;
+  border-radius: 8px;
 }
 .task_eyecatch-show img {
-  height: 170px;
-}
-.task-thumbnail {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   width: 100%;
-  max-width: 600px;
-  display: block;
-  margin: 20px auto;
 }
-.task-description {
-  margin-top: 20px;
-  font-size: 16px;
+
+.comments-section {
+  margin-top: 35px;
+}
+
+.comment_title {
+  margin-bottom: 25px;
+  color: #000;
+  font-family: Sen;
+  font-size: 26px;
+  font-weight: 400;
+}
+
+.comment_box {
+  margin-bottom: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 16px;
+}
+
+/* アバター画像 */
+.comment-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.comment-content {
+  color: #000;
+  font-family: Sen;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.comment_add {
+  padding-top: 20px;
+  padding-bottom: 18px;
+  color: #000;
+  text-align: center;
+  font-size: 18px;
+  font-family: Sen;
+  font-weight: 400;
+  border-radius: 10px;
+  border: 1px dashed rgba(0, 0, 0, 0.2);
+  background: #FFF;
 }
 
 html {

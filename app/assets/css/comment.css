@@ -1,0 +1,52 @@
+@charset "UTF-8";
+.comments-section {
+  margin-top: 35px;
+}
+
+.comment_title {
+  margin-bottom: 25px;
+  color: #000;
+  font-family: Sen;
+  font-size: 26px;
+  font-weight: 400;
+}
+
+.comment_box {
+  margin-bottom: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 16px;
+}
+
+/* アバター画像 */
+.comment-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.comment-content {
+  color: #000;
+  font-family: Sen;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.comment_add {
+  padding-top: 20px;
+  padding-bottom: 18px;
+  color: #000;
+  text-align: center;
+  font-size: 18px;
+  font-family: Sen;
+  font-weight: 400;
+  border-radius: 10px;
+  border: 1px dashed rgba(0, 0, 0, 0.2);
+  background: #FFF;
+}
