@@ -39,8 +39,43 @@
     word-break: break-all;
 }
 
-.comment-description {
-4
+.comment-users {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    display: flex;
+    // gap: 3px; /* アイコンの間隔 */
+  }
+  
+  .comment-user-avatar {
+    margin-right: -13px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    // border: 2px solid #ddd; /* 枠線をつける場合 */
+  }
+
+.comment-info {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+  }
+  
+.comment-icon {
+    width: 20px;
+    height: 20px;
+}
+  
+.comment-count {
+    color: #000;
+    font-family: Sen;
+    font-size: 14px;
+    font-weight: 400;
+    opacity: 0.2;
 }
 
 .comment_add{

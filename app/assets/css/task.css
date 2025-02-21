@@ -1,3 +1,10 @@
+.sen {
+  font-family: "Sen", serif;
+  font-optical-sizing: auto;
+  font-weight: 400, 800;
+  font-style: normal;
+}
+
 .task-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -34,7 +41,7 @@
   word-break: break-all;
 }
 .task_deadline {
-  margin-bottom: 29px;
+  margin-bottom: 65px;
 }
 .task_eyecatch {
   margin-bottom: 27px;
