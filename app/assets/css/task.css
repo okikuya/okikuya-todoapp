@@ -1,3 +1,10 @@
+.sen {
+  font-family: "Sen", serif;
+  font-optical-sizing: auto;
+  font-weight: 400, 800;
+  font-style: normal;
+}
+
 .task-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -34,13 +41,14 @@
   word-break: break-all;
 }
 .task_deadline {
-  margin-bottom: 29px;
+  margin-bottom: 65px;
 }
 .task_eyecatch {
   margin-bottom: 27px;
   height: 170px;
-  position: relative;
   overflow: hidden;
+  border-radius: 8px;
+  position: relative;
 }
 .task_eyecatch img {
   position: absolute;
@@ -54,18 +62,14 @@
   margin-top: 32px;
   height: 170px;
   overflow: hidden;
-  text-align: center;
+  border-radius: 8px;
+  position: relative;
 }
 .task_eyecatch-show img {
-  height: 170px;
-}
-.task-thumbnail {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   width: 100%;
-  max-width: 600px;
-  display: block;
-  margin: 20px auto;
-}
-.task-description {
-  margin-top: 20px;
-  font-size: 16px;
 }

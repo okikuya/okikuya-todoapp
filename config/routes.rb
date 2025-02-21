@@ -4,7 +4,12 @@ Rails.application.routes.draw do
   resources :boards, only: [:new, :create, :edit, :update, :destroy]
   root to: 'home#index'
   get "boards", to: "home#index"
+  # resources :boards do
+  #   resources :tasks
+  # end
   resources :boards do
-    resources :tasks
+    resources :tasks do
+      resources :comments, only: [:new, :create]
+    end
   end
 end

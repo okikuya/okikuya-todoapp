@@ -1,4 +1,11 @@
 @charset "UTF-8";
+.sen {
+  font-family: "Sen", serif;
+  font-optical-sizing: auto;
+  font-weight: 400, 800;
+  font-style: normal;
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
