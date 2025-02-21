@@ -30,6 +30,7 @@ gem 'bootsnap', '>= 1.4.2', require: false
 gem 'concurrent-ruby', '1.3.4'
 gem 'haml-rails'
 gem 'aws-sdk-s3', require: false
+gem 'rubygems-update'
 gem 'ffi', '< 1.17'
 
 
