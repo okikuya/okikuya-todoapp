@@ -29,12 +29,14 @@ gem 'jbuilder', '~> 2.7'
 gem 'bootsnap', '>= 1.4.2', require: false
 gem 'concurrent-ruby', '1.3.4'
 gem 'haml-rails'
+gem 'aws-sdk-s3', require: false
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'html2haml'
   gem 'pry-byebug'
+  gem 'dotenv-rails'
 end
 
 group :development do
