@@ -6,10 +6,11 @@
     "@rails/activestorage": "^6.0.0",
     "@rails/ujs": "^6.0.0",
     "@rails/webpacker": "4.3.0",
+    "sass": "^1.84.0",
     "turbolinks": "^5.2.0"
   },
   "version": "0.1.0",
   "engines": {
-    "node": "16.x.0"
+    "node": "16.x"
   }
 }
