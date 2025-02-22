@@ -10,9 +10,6 @@
   },
   "version": "0.1.0",
   "engines": {
-    "node": "16.x"
-  },
-  "devDependencies": {
-    "sass": "^1.85.0"
+    "node": "16.x.0"
   }
 }
