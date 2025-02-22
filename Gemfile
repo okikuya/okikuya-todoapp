@@ -25,7 +25,8 @@ gem "devise"
 gem 'hamlit'
 gem 'aws-sdk-s3', require: false
 gem 'rubygems-update'
-gem 'ffi', '< 1.17'
+gem 'ffi', '~> 1.15.5'
+gem 'psych', '~> 3.1'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
