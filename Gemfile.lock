@@ -109,7 +109,7 @@ GEM
       html2haml
     erubi (1.13.1)
     erubis (2.7.0)
-    ffi (1.16.3)
+    ffi (1.15.5)
     globalid (1.1.0)
       activesupport (>= 5.0)
     haml (6.3.0)
@@ -175,6 +175,7 @@ GEM
     pry-byebug (3.10.1)
       byebug (~> 11.0)
       pry (>= 0.13, < 0.15)
+    psych (3.1.0)
     public_suffix (5.1.1)
     puma (4.3.12)
       nio4r (~> 2.0)
@@ -299,13 +300,14 @@ DEPENDENCIES
   devise
   dotenv-rails
   erb2haml
-  ffi (< 1.17)
+  ffi (~> 1.15.5)
   hamlit
   hamlit-rails (~> 0.2.3)
   jbuilder (~> 2.7)
   listen (~> 3.2)
   pg (>= 0.18, < 2.0)
   pry-byebug
+  psych (~> 3.1)
   puma (~> 4.1)
   rails (= 6.0.6.1)
   rubygems-update
