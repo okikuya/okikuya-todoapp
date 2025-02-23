@@ -2,7 +2,8 @@ default: &default
   adapter: postgresql
   encoding: unicode
   pool: 5
-  host: /tmp
+  host: /var/run/postgresql
+  username: postgres
   timeout: 5000
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 
