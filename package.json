@@ -11,7 +11,8 @@
   },
   "version": "0.1.0",
   "engines": {
-    "node": "18.x"
+    "node": "18.20.7",
+    "yarn": "1.22.22"
   },
   "scripts": {
     "build": "NODE_OPTIONS=--openssl-legacy-provider webpack --mode production"
