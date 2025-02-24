@@ -15,6 +15,7 @@
     "yarn": "1.22.22"
   },
   "scripts": {
+    "develop": "NODE_OPTIONS='--openssl-legacy-provider' gatsby develop",
     "start": "react-scripts start"
   }
 }
