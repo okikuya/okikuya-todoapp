@@ -15,6 +15,6 @@
     "yarn": "1.22.22"
   },
   "scripts": {
-    "start": "react-scripts start --openssl-legacy-provider"
+    "start": "react-scripts --openssl-legacy-provider start"
   }
 }
