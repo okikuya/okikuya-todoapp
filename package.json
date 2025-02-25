@@ -14,7 +14,6 @@
     "node": "22.11.0",
     "yarn": "1.22.22"
   },
-
   "scripts": {
     "start": "react-scripts --openssl-legacy-provider start"
   }
