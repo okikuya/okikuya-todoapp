@@ -15,7 +15,6 @@ test:
 
 production:
   <<: *default
-  url: <%= ENV['DATABASE_URL'] %>
   database: todo_app_production
   username: todo_app
   password: <%= ENV['DATABASE_PASSWORD'] %>
