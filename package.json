@@ -15,7 +15,10 @@
     "yarn": "1.22.22"
   },
   "scripts": {
-    "start": "react-scripts --openssl-legacy-provider start"
+    "dev": "NODE_OPTIONS='--openssl-legacy-provider' nuxt",
+    "build": "NODE_OPTIONS='--openssl-legacy-provider' nuxt build",
+    "start": "nuxt start"
+    // "start": "react-scripts --openssl-legacy-provider start"
   }
 }
 
