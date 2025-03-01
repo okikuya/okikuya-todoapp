@@ -1,24 +1,17 @@
-# README
+source ~/.bash_profile
+source ~/.bash_profile
+export PYTHON=$(which python3)
+alias python=python3
+source ~/.bash_profile
+source ~/.bash_profile
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+export PATH="/opt/homebrew/opt/openssl@3/bin:$PATH"
 
-Things you may want to cover:
+export LDFLAGS="-L/opt/homebrew/opt/openssl@3/lib -L/opt/homebrew/opt/libyaml/lib -L/opt/homebrew/opt/readline/lib"
 
-* Ruby version
+export CPPFLAGS="-I/opt/homebrew/opt/openssl@3/include -I/opt/homebrew/opt/libyaml/include -I/opt/homebrew/opt/readline/include"
 
-* System dependencies
+export PKG_CONFIG_PATH="/opt/homebrew/opt/openssl@3/lib/pkgconfig:/opt/homebrew/opt/libyaml/lib/pkgconfig:/opt/homebrew/opt/readline/lib/pkgconfig"
 
-* Configuration
 
-* Database creation
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
